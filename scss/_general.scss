@@ -1,0 +1,121 @@
+:root {
+    background: lightgray;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    div.design-model {
+        position: fixed;
+        z-index: 999;
+        pointer-events: none;
+        width: 100vw;
+        opacity: 0.1;
+        text-align: center;
+        img {
+            width: auto;
+            height: auto;
+        }
+    }
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.page {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: $white
+}
+
+.features {
+
+    .features_list {
+
+        list-style-type: none;
+        display: flex;
+        width: 100%;
+        padding: 0;
+        @media screen and (max-width: 800px) {
+            flex-wrap: wrap;
+        }
+
+        .feature_item {
+
+            flex-basis: 25%;
+            display: grid;
+            place-items: center;
+
+            @media screen and (max-width: 800px) {
+                flex-basis: 50%;
+            }
+            .feature_title {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.section {
+    display: grid;
+    grid-template: 
+        "a c" auto
+        "b c" auto / 1fr 1fr;
+
+    @media screen and (max-width: 800px) {
+        grid-template:
+            "a"
+            "c"
+            "b";
+    }
+
+    .title {
+        grid-area: a;
+        font-size: 2.5rem;
+
+        .small {
+            font-size: 0.9rem;
+            display: block;
+        }
+
+        @media screen and (max-width: 800px) {
+            text-align: center;
+        }
+    }
+
+    .text {
+        grid-area: b;
+    }
+
+    .illustration {
+        grid-area: c;
+        display: grid;
+        place-items: center;
+
+        @media screen and (max-width: 800px) {
+            height: auto;
+
+            .svg-picture {
+                width: 50%;
+            }
+        }
+    }
+}
+
+.button {
+    padding: 1.5rem;
+    background: $orange;
+    border: none;
+    border-radius: 7px;
+    color: $white;
+    font-weight: bold;
+    transition: filter 0.25s;
+    cursor: pointer;
+
+    &:hover {
+        filter:contrast(0.5);
+    }
+}
