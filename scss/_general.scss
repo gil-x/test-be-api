@@ -13,9 +13,19 @@ body {
         width: 100vw;
         opacity: 0.1;
         text-align: center;
+
+        &.full {
+            opacity: 1;
+        }
+
+        &.off {
+            opacity: 0;
+        }
+
         img {
             width: auto;
             height: auto;
+            border: 1px solid red;
         }
     }
 }
@@ -28,7 +38,9 @@ body {
 .page {
     max-width: 1400px;
     margin: 0 auto;
-    background: $white
+    padding: 0 2rem;
+    background: $white;
+    box-sizing: border-box;
 }
 
 .features {

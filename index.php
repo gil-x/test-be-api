@@ -20,7 +20,7 @@
             <a href="/">
                 <?php
             include 'svg/logo_txt.svg';?>
-                <img class="logo" src="media/logo_lambda1.svg" alt="Logo Lambda" />
+                <img class="logo" src="media/logo.png" alt="Logo Lambda" />
                 <span class="logo_text">Productly</span>
             </a>
             <nav class="main-menu">
@@ -47,14 +47,17 @@
             </nav>
         </header>
 
-        <section class="introduction">
+        <section class="section introduction">
             <h1 class="h1">The Design Thinking superpowers</h1>
             <p class="baseline">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
             <div class="call-to-action">
                 <button class="button get-started">Get started</button>
                 <button class="button watch-video">Watch the Video</button>
             </div>
-            <?php include 'svg/picture0.svg'; ?>
+            <div class="illustration">
+                <img class="svg-picture" src="svg/picture0.svg" alt="">
+            </div>
+            <?php //include 'svg/picture0.svg'; ?>
         </section>
 
         <section class="features">

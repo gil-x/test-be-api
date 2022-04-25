@@ -14,9 +14,16 @@ body div.design-model {
   opacity: 0.1;
   text-align: center;
 }
+body div.design-model.full {
+  opacity: 1;
+}
+body div.design-model.off {
+  opacity: 0;
+}
 body div.design-model img {
   width: auto;
   height: auto;
+  border: 1px solid red;
 }
 
 .logo {
@@ -27,7 +34,9 @@ body div.design-model img {
 .page {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 2rem;
   background: white;
+  box-sizing: border-box;
 }
 
 .features .features_list {
