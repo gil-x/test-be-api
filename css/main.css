@@ -482,13 +482,18 @@ body a {
 .burger {
   width: 30px;
   height: 30px;
-  display: inline-block;
   position: fixed;
   top: 30px;
   right: 30px;
   z-index: 999;
   background: url(../media/burger.svg) no-repeat;
   cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .burger {
+    display: inline-block;
+  }
 }
 
 .footer {
