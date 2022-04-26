@@ -18,8 +18,9 @@ $font-l: 2.5rem;
 $font-m: 1.5rem;
 $font-s: 0.9rem;
 
-$padding-lr: 8rem;
+$padding-lr: 12rem;
 $padding-small: 4rem;
+$padding-lr-mobile: 2rem;
 
 // Sign IN
 // 173A56
@@ -40,3 +41,32 @@ $padding-small: 4rem;
 // // Light field
 // BCD0E5
 // 3380C0
+
+// DEBUG
+// div.design-model {
+//     display: none !important;
+
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 999;
+//     pointer-events: none;
+//     width: 100vw;
+//     opacity: 0.1;
+//     text-align: center;
+
+//     &.full {
+//         opacity: 1;
+//         pointer-events: all;
+//     }
+
+//     &.off {
+//         opacity: 0;
+//     }
+
+//     img {
+//         width: 100%;
+//         height: auto;
+//         border: 1px solid red;
+//     }
+// }

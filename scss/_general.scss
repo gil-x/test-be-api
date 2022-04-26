@@ -10,48 +10,23 @@
     background: lightgray;
     font-size: $font-root;
     font-family: Promixa, sans-serif;
+    color: $font-black;
 }
 
 body {
     margin: 0;
     padding: 0;
     overflow-y: hidden;
-    
-    div.design-model {
-        display: none !important;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 999;
-        pointer-events: none;
-        width: 100vw;
-        opacity: 0.1;
-        text-align: center;
-
-        &.full {
-            opacity: 1;
-            pointer-events: all;
-        }
-
-        &.off {
-            opacity: 0;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-            border: 1px solid red;
-        }
-    }
 
     a {
         color: inherit;
         text-decoration: none;
     }
+
+    @media screen and (max-width: 800px) {
+        overflow-y: scroll;
+    }
 }
-
-
 
 .page {
     margin: 0 auto;
@@ -59,19 +34,25 @@ body {
     background: $white;
     box-sizing: border-box;
 
-        height: 100vh;
-        scroll-snap-type: y mandatory;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+
+    @media screen and (max-width: 800px) {
+        height: auto;
+        scroll-snap-type: none;
         overflow-y: scroll;
+        padding: 0 $padding-lr-mobile;
+    }
 }
-
-
-
-
-
 
 .section {
     height: 100vh;
     scroll-snap-align: start;
+
+    @media screen and (max-width: 800px) {
+        height: auto;
+    }
 
     &.illustrated {
         display: grid;
@@ -100,6 +81,7 @@ body {
         .small {
             font-size: $font-s;
             display: block;
+            font-weight: normal;
         }
 
         @media screen and (max-width: 800px) {
@@ -161,6 +143,23 @@ body {
                 }
             }
         }
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+
+            .illustration {
+                order: 1;
+            }
+            .text {
+                order: 2;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            text-align: center;
+        }
     }
 
     &.features {
@@ -170,6 +169,11 @@ body {
         .features_container {
             background: linear-gradient(0deg, rgba(255,229,210,0.63) 0%, rgba(255,244,229,0) 50%);
             clip-path: ellipse(60% 50% at 50% 50%);
+
+            @media screen and (max-width: 800px) {
+                background: none;
+                clip-path: none;
+            }
 
             .h2 {
                 text-align: center;
@@ -183,7 +187,8 @@ body {
                 width: 100%;
                 padding: 0;
                 @media screen and (max-width: 800px) {
-                    flex-wrap: wrap;
+                    // flex-wrap: wrap;
+                    display: block;
                 }
         
                 .feature_item {
@@ -192,7 +197,7 @@ body {
                     padding: $padding-small;
         
                     @media screen and (max-width: 800px) {
-                        flex-basis: 50%;
+                        text-align: center;
                     }
 
                     .feature_title {
@@ -230,8 +235,12 @@ body {
         place-items: center;
         text-align: center;
         background: linear-gradient(180deg, rgba(255,229,210,0.63) 20%, rgba(255,244,229,0) 50%);
-        // background-position: 0 50px;
-            clip-path: ellipse(60% 50% at 50% 65%);
+        clip-path: ellipse(60% 50% at 50% 65%);
+
+        @media screen and (max-width: 800px) {
+            background: none;
+            clip-path: none;
+        }
 
         .h2 {
             font-size: $font-l;
@@ -241,22 +250,8 @@ body {
             @include big-button;
         }
 
-        // .heroes_text {
-        //     // width: 100%;
-        //     // height: 100%;
-        //     // position: absolute;
-        //     // top: 0;
-        //     // z-index: 999;
-            
-        // }
-
         .heroes_list {
             position: absolute;
-            // top: 0;
-            // width: 100%;
-            // height: 100%;
-            // z-index: 99;
-            // background: yellow;
 
             .heroe {
                 .avatar {
@@ -267,20 +262,8 @@ body {
             }
         
         }
-
-        // .background {
-        //     width: 100%;
-        //     height: 100%;
-        //     position: absolute;
-        //     background: linear-gradient(0deg, rgba(255,229,210,0.63) 0%, rgba(255,244,229,0) 50%);
-        //     clip-path: ellipse(60% 50% at 50% 50%);
-        // }
-        
-
     }
 }
-
-
 
 .slideshow {
     overflow: hidden;
@@ -300,9 +283,6 @@ body {
             box-sizing: border-box;
             font-size: $font-root;
             border-radius: 10px 10px 0 0 ;
-            // border: 1px dashed orange;
-
-            
 
             .slide_picture {
                 width: 100%;
@@ -343,4 +323,3 @@ body {
         }
     }
 }
-

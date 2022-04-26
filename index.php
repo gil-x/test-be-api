@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="body theme1">
-    <div class="design-model">
+<body class="body">
+    <!-- <div class="design-model">
         <img src="media/design.webp" alt="">
-    </div>
+    </div> -->
+
+    <span class="burger"></span>
 
 
     <div class="page">
