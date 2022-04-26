@@ -148,6 +148,7 @@ body a {
 .section.introduction .button:hover {
   background: #775298;
   color: white;
+  text-decoration: none;
 }
 .section.introduction .button.watch-video {
   color: #FF9900;
@@ -197,6 +198,30 @@ body a {
 .section.features .features_container .features_list .feature_item .feature_title {
   font-weight: bold;
 }
+.section.features .features_container .features_list .feature_item:nth-child(1)::before {
+  content: url(/media/icon1.png);
+  position: relative;
+  left: -3px;
+  top: -40px;
+}
+.section.features .features_container .features_list .feature_item:nth-child(2)::before {
+  content: url(/media/icon2.png);
+  position: relative;
+  left: -3px;
+  top: -40px;
+}
+.section.features .features_container .features_list .feature_item:nth-child(3)::before {
+  content: url(/media/icon3.png);
+  position: relative;
+  left: -3px;
+  top: -40px;
+}
+.section.features .features_container .features_list .feature_item:nth-child(4)::before {
+  content: url(/media/icon4.png);
+  position: relative;
+  left: -3px;
+  top: -40px;
+}
 .section.features .features_container .call-to-action {
   width: 100%;
   padding: 4rem 0;
@@ -220,6 +245,7 @@ body a {
 .section.features .features_container .call-to-action .button:hover {
   background: #775298;
   color: white;
+  text-decoration: none;
 }
 .section.super-heroes {
   display: grid;
@@ -248,6 +274,7 @@ body a {
 .section.super-heroes .button:hover {
   background: #775298;
   color: white;
+  text-decoration: none;
 }
 .section.super-heroes .heroes_list {
   position: absolute;
@@ -331,6 +358,9 @@ body a {
 .header .main-menu .main-menu_list .menu-item {
   padding: 1rem;
 }
+.header .main-menu .main-menu_list .menu-item:hover {
+  text-decoration: underline;
+}
 .header .main-menu .main-menu_list .menu-item.sign-in {
   margin: 0 1rem 0 0;
   padding: 1rem 2.5rem;
@@ -349,6 +379,7 @@ body a {
 .header .main-menu .main-menu_list .menu-item.sign-in:hover {
   background: #4d8dff;
   color: white;
+  text-decoration: none;
 }
 .header .main-menu .main-menu_list .menu-item.sign-up {
   margin: 0 1rem 0 0;
@@ -368,6 +399,7 @@ body a {
 .header .main-menu .main-menu_list .menu-item.sign-up:hover {
   background: #775298;
   color: white;
+  text-decoration: none;
 }
 
 .footer {
@@ -428,4 +460,5 @@ body a {
 .footer .footer_container .footer-menucall-to-action .button:hover {
   background: #775298;
   color: white;
+  text-decoration: none;
 }

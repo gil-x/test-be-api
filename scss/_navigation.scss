@@ -23,6 +23,10 @@
             .menu-item {
                 padding: 1rem;
 
+                &:hover {
+                    text-decoration: underline;
+                }
+
                 &.sign-in {
                     @include big-button(
                         $white, $blue-dark,

@@ -194,8 +194,19 @@ body {
                     @media screen and (max-width: 800px) {
                         flex-basis: 50%;
                     }
+
                     .feature_title {
                         font-weight: bold;
+                    }
+
+                    @for $i from 1 through 4 {
+
+                        &:nth-child(#{$i})::before {
+                            content:url(/media/icon#{$i}.png) ;
+                            position:relative; 
+                            left:-3px;
+                            top: -40px;
+                        }
                     }
                 }
             }
