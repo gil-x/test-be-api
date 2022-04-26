@@ -181,26 +181,69 @@
 
             <section class="section slideshow">
                 <div class="slideshow_container">
-                    <div class="slide-item">
-                        <img class="slide_picture" src="media/slide1.png" alt="">
-                        <span class="info">By Abdullah |  03 March 2019</span>
-                        <h3 class="h3">Increasing Prosperity With Positive Thinking</h3>
-                    </div>
-                    <div class="slide-item">
-                        <img class="slide_picture" src="media/slide2.png" alt="">
-                        <span class="info">By Abdullah |  03 March 2019</span>
-                        <h3 class="h3">Increasing Prosperity With Positive Thinking</h3>
-                    </div>
-                    <div class="slide-item">
-                        <img class="slide_picture" src="media/slide3.png" alt="">
-                        <span class="info">By Abdullah |  03 March 2019</span>
-                        <h3 class="h3">Increasing Prosperity With Positive Thinking</h3>
-                    </div>
-                    <div class="slide-item">
-                        <img class="slide_picture" src="media/slide4.png" alt="">
-                        <span class="info">By Abdullah |  03 March 2019</span>
-                        <h3 class="h3">Increasing Prosperity With Positive Thinking</h3>
-                    </div>
+
+                    <!-- <div class="slide"> -->
+                        <div class="slide-item">
+                            <img class="slide_picture" src="media/slide1.png" alt="">
+                            <span class="info">By Abdullah |  03 March 2019</span>
+                            <h3 class="h3">Increasing Prosperity With Positive Thinking</h3>
+                        </div>
+                        <div class="slide-item">
+                            <img class="slide_picture" src="media/slide2.png" alt="">
+                            <span class="info">By Abdullah |  03 March 2019</span>
+                            <h3 class="h3">Increasing Prosperity With Positive Thinking</h3>
+                        </div>
+                        <div class="slide-item">
+                            <img class="slide_picture" src="media/slide3.png" alt="">
+                            <span class="info">By Abdullah |  03 March 2019</span>
+                            <h3 class="h3">Increasing Prosperity With Positive Thinking</h3>
+                        </div>
+                    <!-- </div> -->
+
+                    <!-- <div class="slide"> -->
+                        <div class="slide-item">
+                            <img class="slide_picture" src="media/slide4.png" alt="">
+                            <span class="info">By Abdullah |  03 March 2019</span>
+                            <h3 class="h3">Increasing Prosperity With Positive Thinking</h3>
+                        </div>
+                        <div class="slide-item">
+                            <img class="slide_picture" src="media/slide5.png" alt="">
+                            <span class="info">By Abdullah |  03 March 2019</span>
+                            <h3 class="h3">Increasing Prosperity With Positive Thinking</h3>
+                        </div>
+                        <div class="slide-item">
+                            <img class="slide_picture" src="media/slide6.png" alt="">
+                            <span class="info">By Abdullah |  03 March 2019</span>
+                            <h3 class="h3">Increasing Prosperity With Positive Thinking</h3>
+                        </div>
+                    <!-- </div> -->
+                        <div class="slide-item">
+                            <img class="slide_picture" src="media/slide1.png" alt="">
+                            <span class="info">By Abdullah |  03 March 2019</span>
+                            <h3 class="h3">Increasing Prosperity With Positive Thinking</h3>
+                        </div>
+                        <div class="slide-item">
+                            <img class="slide_picture" src="media/slide5.png" alt="">
+                            <span class="info">By Abdullah |  03 March 2019</span>
+                            <h3 class="h3">Increasing Prosperity With Positive Thinking</h3>
+                        </div>
+                        <div class="slide-item">
+                            <img class="slide_picture" src="media/slide3.png" alt="">
+                            <span class="info">By Abdullah |  03 March 2019</span>
+                            <h3 class="h3">Increasing Prosperity With Positive Thinking</h3>
+                        </div>
+
+                        <!-- <div class="slide-item">
+                            <img class="slide_picture" src="media/slide4.png" alt="">
+                            <span class="info">By Abdullah |  03 March 2019</span>
+                            <h3 class="h3">Increasing Prosperity With Positive Thinking</h3>
+                        </div>
+                        <div class="slide-item">
+                            <img class="slide_picture" src="media/slide5.png" alt="">
+                            <span class="info">By Abdullah |  03 March 2019</span>
+                            <h3 class="h3">Increasing Prosperity With Positive Thinking</h3>
+                        </div> -->
+                    
                 </div>
                 <div class="bullets">
                     <nav>
