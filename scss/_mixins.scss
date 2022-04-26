@@ -1,0 +1,41 @@
+@mixin big-button(
+    $bg: $orange, $bg-h: $purple,
+    $border: transparent, $border-h: transparent,
+    $color: $white, $color-h: $white) {
+
+    margin: 0 1rem 0 0;
+    padding: 1rem 2.5rem;
+    box-sizing: border-box;
+    background: $bg;
+    border: 1px solid $border;
+    border-radius: 5px;
+    color: $color;
+    font-weight: bold;
+    
+    
+    transition: background 0.25s, $color 0.25s;
+    cursor: pointer;
+
+    &:hover {
+        background: $bg-h;
+        color: $color-h;
+    }
+}
+
+%logo {
+    display: flex;
+    align-items: center;
+    
+    .logo_icon {
+        display: inline-block;
+        width: 30px;
+        height: auto;
+        margin: 0 1rem;
+    }
+    .logo_text-svg {
+        // line-height: 0;
+        // font-size: 2rem;
+        height: 35px;
+        width: auto;
+    }
+}
