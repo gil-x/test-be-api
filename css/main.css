@@ -78,8 +78,17 @@ body a {
   grid-template: "c a" auto "c b" auto/1fr 1fr;
 }
 @media screen and (max-width: 800px) {
+  .section.illustrated:nth-child(2n) {
+    grid-template: "a" "c" "b";
+  }
+}
+.section.illustrated .checked_list {
+  list-style-image: url(/media/check.png);
+}
+@media screen and (max-width: 800px) {
   .section.illustrated {
     grid-template: "a" "c" "b";
+    margin: 4rem 0;
   }
 }
 .section .title {
@@ -390,7 +399,9 @@ body a {
 @media screen and (max-width: 800px) {
   .header .main-menu .main-menu_list {
     flex-direction: column;
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    justify-content: stretch;
   }
 }
 .header .main-menu .main-menu_list .menu-item {
@@ -440,6 +451,14 @@ body a {
   text-decoration: none;
 }
 @media screen and (max-width: 800px) {
+  .header .main-menu .main-menu_list .menu-item, .header .main-menu .main-menu_list .menu-item.sign-in, .header .main-menu .main-menu_list .menu-item.sign-up {
+    padding: 2rem 4rem;
+    background: none;
+    border: none;
+    color: #2F281E;
+  }
+}
+@media screen and (max-width: 800px) {
   .header .main-menu {
     width: 100vw;
     height: 100vh;
@@ -483,6 +502,11 @@ body a {
   padding: 3rem 0 0 0;
   border-top: 1px solid #BCD0E5;
 }
+@media screen and (max-width: 800px) {
+  .footer .footer_container {
+    display: block;
+  }
+}
 .footer .footer_container .column {
   flex-basis: 25%;
   display: flex;
@@ -496,6 +520,11 @@ body a {
   margin: 0.5rem 0 2rem 0;
   font-size: 1.1rem;
   font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+  .footer .footer_container .column .footer-menu_title {
+    margin: 2rem 0 0.5rem 0;
+  }
 }
 .footer .footer_container .footer-menu .footer-menu_list {
   list-style-type: none;
@@ -531,4 +560,12 @@ body a {
   background: #775298;
   color: white;
   text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+  .footer .footer_container .footer-menucall-to-action {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 0 0 2rem 0;
+  }
 }

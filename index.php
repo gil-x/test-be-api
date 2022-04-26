@@ -122,7 +122,7 @@
                 </h2>
                 <div class="text">
                     <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.</p>
-                    <ul>
+                    <ul class="checked_list">
                         <li>Never worry about overpaying for your energy again.</li>
                         <li>We will only switch you to energy companies that we trust and will treat you right</li>
                         <li>We track the markets daily and know where the savings are.</li>

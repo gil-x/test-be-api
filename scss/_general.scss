@@ -63,6 +63,20 @@ body {
             grid-template: 
             "c a" auto
             "c b" auto / 1fr 1fr;
+
+            @media screen and (max-width: 800px) {
+                grid-template:
+                    "a"
+                    "c"
+                    "b";
+            }
+        }
+
+        .checked_list {
+            list-style-image: url(/media/check.png) ;
+            li::marker {
+                // TODO
+            }
         }
 
         @media screen and (max-width: 800px) {
@@ -70,6 +84,7 @@ body {
                 "a"
                 "c"
                 "b";
+            margin: 4rem 0;
         }
     }
 

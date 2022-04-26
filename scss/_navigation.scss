@@ -27,7 +27,9 @@
 
             @media screen and (max-width: 800px) {
                 flex-direction: column;
-                background: $white;
+                background: rgba(255, 255, 255, 0.9);
+                height: 100%;
+                justify-content: stretch;
             }
 
             .menu-item {
@@ -48,6 +50,15 @@
                 &.sign-up {
                     @include big-button;
                     font-size: 1rem;
+                }
+
+                &, &.sign-in, &.sign-up {
+                    @media screen and (max-width: 800px) {
+                        padding: 2rem 4rem;
+                        background: none;
+                        border: none;
+                        color: $font-black;
+                    }
                 }
             }
         }
@@ -74,7 +85,6 @@
         position: static;
     }
 }
-
 
 .burger {
     width: 30px;
