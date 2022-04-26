@@ -66,27 +66,29 @@
         </section>
 
         <section class="section features">
-            <h2 class="h2">We design tools to unveil your superpowers</h2>
-            <ul class="features_list">
-                <li class="feature_item">
-                    <span class="feature_title">First click tests</span>
-                    <p>While most people enjoy casino gambling.</p>
-                </li>
-                <li class="feature_item">
-                    <span class="feature_title">First click tests</span>
-                    <p>While most people enjoy casino gambling.</p>
-                </li>
-                <li class="feature_item">
-                    <span class="feature_title">First click tests</span>
-                    <p>While most people enjoy casino gambling.</p>
-                </li>
-                <li class="feature_item">
-                    <span class="feature_title">First click tests</span>
-                    <p>While most people enjoy casino gambling.</p>
-                </li>
-            </ul>
-            <div class="call-to-action">
-                <button class="button sign-up-now">Sign up now</button>
+            <div class="features_container">
+                <h2 class="h2">We design tools to unveil<br>your superpowers</h2>
+                <ul class="features_list">
+                    <li class="feature_item">
+                        <span class="feature_title">First click tests</span>
+                        <p>While most people enjoy casino gambling.</p>
+                    </li>
+                    <li class="feature_item">
+                        <span class="feature_title">First click tests</span>
+                        <p>While most people enjoy casino gambling.</p>
+                    </li>
+                    <li class="feature_item">
+                        <span class="feature_title">First click tests</span>
+                        <p>While most people enjoy casino gambling.</p>
+                    </li>
+                    <li class="feature_item">
+                        <span class="feature_title">First click tests</span>
+                        <p>While most people enjoy casino gambling.</p>
+                    </li>
+                </ul>
+                <div class="call-to-action">
+                    <button class="button sign-up-now">Sign up now</button>
+                </div>
             </div>
         </section>
 
@@ -149,13 +151,17 @@
             </section>
 
             <section class="section super-heroes">
-                <h2>Need a super hero?</h2>
-                <p>Do you require some help for your project: Conception workshop,<br>
-                prototyping, marketing strategy, landing page, Ux/UI?</p>
-                <div class="call-to-action">
-                    <button class="button contact-expert">Contact our expert</button>
+
+                <div class="heroes_text">
+                    <div class="call-to-action">
+                        <h2 class="h2">Need a super hero?</h2>
+                        <p>Do you require some help for your project: Conception workshop,<br>
+                        prototyping, marketing strategy, landing page, Ux/UI?</p>
+                        <button class="button contact-expert">Contact our expert</button>
+                    </div>
                 </div>
-                <ul>
+
+                <!-- <ul class="heroes_list">
                     <li class="heroe">
                         <span class="bubble">I can take care of your pitch</span>
                         <img src="media/person1.png" alt="" class="avatar">
@@ -177,9 +183,17 @@
                         <img src="media/person5.png" alt="" class="avatar">
                     </li>
                 </ul>
+
+                <div class="background">
+
+                </div> -->
             </section>
 
             <section class="section slideshow">
+
+                <h2 class="h2">Marketing Strategies</h2>
+                <p>Join 40,000+ other marketers and get proven strategies on email marketing</p>
+
                 <div class="slideshow_container">
 
                     <!-- <div class="slide"> -->
@@ -257,42 +271,44 @@
 
         </main>
 
-        <footer class="footer">
-            <div class="column footer_logo">
-                <a class="logo" href="/">
-                    <img class="logo_icon" src="media/logo.png" alt="Logo Lambda" />
-                    <img class="logo_text-svg" src="svg/logo_text.svg" alt="">
-                </a>
-            </div>
-            <div class="column footer-menu quick-links">
-                <span class="footer-menu_title" >Quick Links</span>
-                <nav>
-                    <ul class="footer-menu_list">
-                        <li class="menu-item">About Us</li>
-                        <li class="menu-item">Blog</li>
-                        <li class="menu-item">Contact</li>
-                        <li class="menu-item">FAQ</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="column footer-menu legal-stuff">
-                <span class="footer-menu_title" >Quick Links</span>
-                <nav>
-                    <ul class="footer-menu_list">
-                        <li class="menu-item">Disclaimer</li>
-                        <li class="menu-item">Financing</li>
-                        <li class="menu-item">Privacy Policy</li>
-                        <li class="menu-item">Terms of Service</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="column footer-menucall-to-action">
-                <p class="footer-menu_title">knowing you're always on the best energy deal.</p>
-                <form class="sign-up-form" action="">
-                    <input class="phone-field" type="text" placeholder="Enter your phone Number">
-                    <button class="button sign-up-now" type="submit">Sign up Now</button>
-                </form>
-                
+        <footer class="section footer">
+            <div class="footer_container">
+                <div class="column footer_logo">
+                    <a class="logo" href="/">
+                        <img class="logo_icon" src="media/logo.png" alt="Logo Lambda" />
+                        <img class="logo_text-svg" src="svg/logo_text.svg" alt="">
+                    </a>
+                </div>
+                <div class="column footer-menu quick-links">
+                    <span class="footer-menu_title" >Quick Links</span>
+                    <nav>
+                        <ul class="footer-menu_list">
+                            <li class="menu-item">About Us</li>
+                            <li class="menu-item">Blog</li>
+                            <li class="menu-item">Contact</li>
+                            <li class="menu-item">FAQ</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="column footer-menu legal-stuff">
+                    <span class="footer-menu_title" >Quick Links</span>
+                    <nav>
+                        <ul class="footer-menu_list">
+                            <li class="menu-item">Disclaimer</li>
+                            <li class="menu-item">Financing</li>
+                            <li class="menu-item">Privacy Policy</li>
+                            <li class="menu-item">Terms of Service</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="column footer-menucall-to-action">
+                    <p class="footer-menu_title">knowing you're always on the best energy deal.</p>
+                    <form class="sign-up-form" action="">
+                        <input class="phone-field" type="text" placeholder="Enter your phone Number">
+                        <button class="button sign-up-now" type="submit">Sign up Now</button>
+                    </form>
+                    
+                </div>
             </div>
         </footer>
     </div>
